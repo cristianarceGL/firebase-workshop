@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="app-header">
+  <div><a routerLink="/">Firebase Workshop</a></div>
+  <span class="nav-tool-items">
+    <a *ngIf="(user$ | async) as user" mat-button>{{user?.email}}</a>
+    <a *ngIf="(user$ | async)" mat-button (click)="logOut()">Log out</a>
+  </span>
+</mat-toolbar>
+<br>
+<ng-content></ng-content>
+<mat-toolbar color="primary" class="app-footer">
+  <div><a routerLink="/"></a></div>
+</mat-toolbar>
