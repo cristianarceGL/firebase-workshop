@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="exporter-version" content="Evernote Mac 7.14 (458244)" />
+    <meta name="altitude" content="982.8507080078125" />
+    <meta name="author" content="crisarji@gmail.com" />
+    <meta name="created" content="2020-02-15 12:42:49 +0000" />
+    <meta name="latitude" content="10.01248168945312" />
+    <meta name="longitude" content="-84.18869712297538" />
+    <meta name="source" content="desktop.mac" />
+    <meta name="updated" content="2020-03-03 12:54:04 +0000" />
+    <title>Firebase Workshop Session#1 March-2020</title>
+</head>
+
+<body>
+    <div><span title="Page 1" style="-en-paragraph:true;"><span
+                style="font-size: 18px; color: rgb(169, 169, 169); font-family: Arial; font-style: italic;">Firebase
+                workshop by Cristian Arce &amp; Alfredo Bonilla
+            </span></span></div>
+    <hr />
+    <div><span style="font-size: 36px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Session
+            #1</span></div>
+    <div><span style="font-size: 24px; caret-color: rgb(72, 177, 65);"><br /></span></div>
+    <div><span
+            style="font-size: 24px; caret-color: rgb(72, 177, 65); color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">NodeJS
+            and NPM Installation Steps</span></div>
+    <div>
+        <font style="font-size: 18px;"><span style="font-size: 18px;"><br /></span></font>
+    </div>
+    <div>
+        <font style="font-size: 18px;"><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step
+                1:</span><span style="font-size: 18px; font-family: Arial;"> Install </span><span
+                style="font-size: 18px; font-family: Arial; font-weight: bold;">NodeJs</span><span
+                style="font-size: 18px; font-family: Arial;"> version for MacOs from </span><span
+                style="font-size: 18px;"><a href="https://nodejs.org/en/download/"
+                    style="font-size: 18px; font-family: Arial;">https://nodejs.org/en/download/</a></span></font>
+    </div>
+    <div>
+        <font face="Arial" style="font-size: 18px;"><br /></font>
+    </div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Note: </span><span
+            style="font-size: 18px; font-family: Arial;">In case of receiving an </span><span
+            style="font-size: 18px; color: rgb(255, 38, 0); font-family: Arial; font-weight: bold;">error</span><span
+            style="font-size: 18px; font-family: Arial;"> such as: "</span><span
+            style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">can’t be opened because
+            apple cannot check it for malicious software</span><span
+            style="font-size: 18px; font-family: Arial;">”: </span></div>
+    <div>
+        <font face="Arial" style="font-size: 18px;"><br /></font>
+    </div>
+    <div><span style="font-size: 18px; font-family: Arial;">     Go to =&gt; </span><span
+            style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial; font-weight: bold;">System Preferences,
+            click Security &amp; Privacy, then click General</span></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">The node package is listed as “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">node-v12.16.0.pkg</span><span
+            style="font-size: 18px; font-family: Arial;">”(current version), click on “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Open Anyway</span><span
+            style="font-size: 18px; font-family: Arial;">”, this should allow you follow the installation steps.</span>
+    </div>
+    <div><br /></div>
+    <div style="text-align: center; ">
+        <font face="Arial" style="font-size: 18px;"><img src="session1/Screen%20Shot%202020-02-15%20at%2006.58.06.png"
+                height="571" width="665" /><br /></font>
+    </div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial;">Follow the installation wizard using
+            the default values, that will finish </span><span
+            style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial; font-weight: bold;">NodeJS</span><span
+            style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial;"> installation in your local machine, at
+            the end of the process, check the node version installed running from terminal: </span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            node -v</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div>
+        <font style="font-size: 18px;"><span
+                style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial; font-weight: bold;">Step 2: </span>
+        </font><span style="font-size: 18px; font-family: Arial;">Install/Update </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">npm</span><span
+            style="font-size: 18px; font-family: Arial;"> running from terminal</span><span
+            style="font-size: 18px; font-family: Arial;"> </span>
+    </div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            npm install npm@latest -g</span></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial; font-weight: bold;">Step 3: </span><span
+            style="font-size: 18px; font-family: Arial;">At the end of the process, check the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">npm</span><span
+            style="font-size: 18px; font-family: Arial;"> version installed running from terminal</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            npm -v</span></div>
+    <div><br /></div>
+    <hr />
+    <div>
+        <font face="Arial" style="font-size: 18px;"><br /></font>
+    </div>
+    <div>
+        <font face="Arial" style="font-size: 18px;"><br /></font>
+    </div>
+    <div><span style="caret-color: rgb(72, 177, 65); font-size: 24px;"><span
+                style="font-size: 24px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Firebase
+                Console Creation Steps</span></span></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 1:</span><span
+            style="font-size: 18px; font-family: Arial;"> Navigate to </span><a href="https://firebase.google.com/"
+            style="font-size: 18px; font-family: Arial;">https://firebase.google.com/</a><span
+            style="font-size: 18px; font-family: Arial;">, it is required to access using a valid set of</span><span
+            style="font-size: 18px; font-family: Arial;"> Google Credentials(gorilla account works)</span></div>
+    <div><span style="font-size: 18px; font-family: Arial;"> </span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">After starting the session, there is the option
+            of </span><span style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">“Add a
+            Project"</span><span style="font-size: 18px; font-family: Arial;">, click there and the wizard will guide
+            you through</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><span
+                style="font-size: 18px; font-family: Arial; font-weight: bold; text-decoration: underline;">Create a
+                project:</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">First step of the wizard is to set a name to the project; it
+            can be anything since it is only a label, the real id of the project will be auto-generated and displayed
+            right below the <span style="font-size: 18px; font-family: Arial; font-weight: bold;">Project
+                Name</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><span style="font-size: 18px; font-family: Arial;"><img
+                src="session1/Screen%20Shot%202020-02-17%20at%2007.13.38.png" height="464" width="732" /><br /></span>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><span
+                style="font-size: 18px; font-family: Arial; font-weight: bold; text-decoration: underline;">Google </span></span><span
+            style="font-size: 18px;"><span
+                style="font-size: 18px; font-family: Arial; font-weight: bold; text-decoration: underline;">Analytics</span></span>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">The second step is to allow/deny the use of Google Analytics
+            tools such as reporting, predictions, testing; for this workshop purposes either is ok, if you want to dig
+            deeper later on your own, you can enable it.</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><span style="font-size: 18px; font-family: Arial;"><img
+                src="session1/Screen%20Shot%202020-02-17%20at%2007.14.10.png" height="818" width="884" /><br /></span>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><span
+                style="font-size: 18px; font-family: Arial; font-weight: bold; text-decoration: underline;">Configure
+                Analytics:</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">The third step is to configure the account attached for
+            Google Analytics; you can select the <span
+                style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">Default Account for
+                Firebase</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">Finally, click on <span
+                style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">Create
+                Project</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><span style="font-size: 18px; font-family: Arial;"><img
+                src="session1/Screen%20Shot%202020-02-17%20at%2007.15.05.png" height="611" width="838" /><br /></span>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">After a few seconds, the project is ready.</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.16.17.png" height="1001"
+            width="1435" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">By default, we are using the free plan, it is
+            called “</span><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Spark Plan</span><span
+            style="font-size: 18px; font-family: Arial;">”.</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.16.49.png" height="997"
+            width="1594" /><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 2:</span><span
+            style="font-size: 18px; font-family: Arial;"> It is required to add the Firebase configuration to a target;
+            since it is a multiplatform tool, </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">iOS</span><span
+            style="font-size: 18px; font-family: Arial;">, </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Android</span><span
+            style="font-size: 18px; font-family: Arial;"> and </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Web</span><span
+            style="font-size: 18px; font-family: Arial;"> are available; for this workshop purpose, the web option is
+            the selected one(</span><span
+            style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">&lt;/&gt;</span><span
+            style="font-size: 18px; font-family: Arial;">)</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><span style="font-size: 18px; font-family: Arial;"><img
+                src="session1/Screen%20Shot%202020-02-17%20at%2022.26.38.png" height="138" width="265" /><br /></span>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">Firstly, an app nickname must me introduced, it can be the
+            previous name of the label; also, check the option of “</span><span
+            style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">Also set up Firebase
+            Hosting for this app</span><span style="font-size: 18px; font-family: Arial;">" </span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.39.19.png" height="679"
+            width="898" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">Second, click “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Next</span><span
+            style="font-size: 18px; font-family: Arial;">” in the “</span><span
+            style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">Add Firebase
+            SDK</span><span style="font-size: 18px; font-family: Arial;">"</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.42.07.png" height="784"
+            width="869" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">Then, execute “</span><i style="font-size: 18px;"><span
+                style="font-size: 18px; font-style: italic; font-family: Arial; font-weight: bold;">npm install -g
+                firebase-tools</span></i><span style="font-size: 18px; font-family: Arial;">” and click “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Next</span><span
+            style="font-size: 18px; font-family: Arial;">"</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.42.46.png" height="647"
+            width="875" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">Last, click on “</span><span
+            style="font-size: 18px; font-family: Arial; font-style: italic; font-weight: bold;">Continue to
+            console</span><span style="font-size: 18px; font-family: Arial;">” button, we are not running the other
+            commands just yet.</span></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.43.05.png" height="866"
+            width="873" /><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 3:</span><span
+            style="font-size: 18px; font-family: Arial;"> Now it is necessary to enable the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Sign-in</span><span
+            style="font-size: 18px; font-family: Arial;"> providers; for this workshop purposes, only the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">email/password</span><span
+            style="font-size: 18px; font-family: Arial;"> must be enabled</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><b style="font-size: 18px;"><img
+                src="session1/Screen%20Shot%202020-02-17%20at%2007.44.49.png" height="979" width="1769" /><br /></b>
+    </div>
+    <div><br /></div>
+    <div>
+        <font style="font-size: 18px;"><br /></font>
+    </div>
+    <div><span style="font-size: 18px;">After enabling the provider, we must create a user for accessing the site. Go to
+        </span><span style="font-size: 18px; font-weight: bold;">Authentication/Users</span><span
+            style="font-size: 18px;"> and add one manually; then save these credentials, they will be used in a
+            while.</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-18%20at%2000.05.06.png" height="637"
+            width="1596" /><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 4:</span><span
+            style="font-family: Arial; font-size: 18px;"> Here comes the No-Sql!, </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Firebase</span><span
+            style="font-family: Arial; font-size: 18px;"> enables two types databases: </span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-family: Arial; font-size: 18px;">    1. </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Realtime</span><span
+            style="font-family: Arial; font-size: 18px;"> </span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">    2. <span
+                style="font-family: Arial; font-size: 18px; font-weight: bold;">Cloud Firestore</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">We will create the 2nd one, and start in <span
+                style="font-size: 18px; font-family: Arial; font-weight: bold;">Production Mode</span></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.47.37.png" height="953"
+            width="1734" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">It is also required to set a location; leave the default
+            one</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.49.23.png" height="972"
+            width="1707" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">And now the database is ready to go!; by the moment we are
+            leaving this empty cause we need to make the integration with the Angular +8 app using this
+            configuration.</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session1/Screen%20Shot%202020-02-17%20at%2007.52.05.png" height="985"
+            width="1766" /><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <hr />
+    <div><span style="font-size: 24px;"><br /></span></div>
+    <div><span
+            style="font-size: 24px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Angular Project</span>
+    </div>
+    <div><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 1:</span><span
+            style="font-size: 18px; font-family: Arial;"> Check your Angular CLI version running “</span><b
+            style="font-size: 18px;"><span
+                style="font-size: 18px; font-weight: bold; font-family: Arial; font-style: italic;">ng
+                version</span></b><span style="font-size: 18px; font-family: Arial;">”, if a valid version is available,
+            the output is something like:</span></div>
+    <div><br /></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div>
+            <font style="font-size: 18px;">$ ❯ <font>ng version</font>
+            </font>
+        </div>
+        <div>
+            <div><br /></div>
+            <div><br /></div>
+        </div>
+        <div>     _                      _                 ____ _     ___</div>
+        <div>    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|</div>
+        <div>   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |</div>
+        <div>  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |</div>
+        <div> /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|</div>
+        <div>                |___/</div>
+        <div>    </div>
+        <div>
+            <div><br /></div>
+            <div><br /></div>
+        </div>
+        <div>Angular CLI: 8.3.25</div>
+        <div>Node: 12.14.0</div>
+        <div>OS: darwin x64</div>
+        <div>Angular: 8.2.14</div>
+        <div>... animations, common, compiler, compiler-cli, core, forms</div>
+        <div>... language-service, platform-browser, platform-browser-dynamic</div>
+        <div>... router</div>
+        <div>
+            <div><br /></div>
+            <div><br /></div>
+        </div>
+        <div>Package                           Version</div>
+        <div>-----------------------------------------------------------</div>
+        <div>@angular-devkit/architect         0.803.25</div>
+        <div>@angular-devkit/build-angular     0.803.25</div>
+        <div>@angular-devkit/build-optimizer   0.803.25</div>
+        <div>@angular-devkit/build-webpack     0.803.25</div>
+        <div>@angular-devkit/core              8.3.25</div>
+        <div>@angular-devkit/schematics        8.3.25</div>
+        <div>@angular/cdk                      8.2.3</div>
+        <div>@angular/cli                      8.3.25</div>
+        <div>@angular/flex-layout              8.0.0-beta.27</div>
+        <div>@angular/material                 8.2.3</div>
+        <div>@ngtools/webpack                  8.3.25</div>
+        <div>@schematics/angular               8.3.25</div>
+        <div>@schematics/update                0.803.25</div>
+        <div>rxjs                              6.4.0</div>
+        <div>typescript                        3.4.5</div>
+        <div>webpack                           4.39.2</div>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">In case of not having an </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Ng Version</span><span
+            style="font-size: 18px; font-family: Arial;">, </span><span
+            style="font-size: 18px; font-family: Arial;">install the lates one executing:</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            npm </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">i
+            @angular/cli@8.3.23</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 2:</span><span
+            style="font-size: 18px; font-family: Arial;"> Clone the base project from repo in a folder</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">git clone <a
+                href="mailto:git@github.com">git@github.com</a>:cristianarceGL/firebase-workshop.git</span><span
+            style="font-size: 18px;" /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            cd </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">firebase-workshop</span>
+    </div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="overflow-x: auto; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; line-height: 20px;">$ </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">git checkout
+            Session1-Base</span><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; line-height: 20px;">$ </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">git
+            pull</span><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px;">After pulling the repo, it is mandatory to install all dependencies and run the
+            app</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">npm
+            install &amp;&amp; npm start</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">After running this, open the browser using the url<span
+                style="font-size: 18px; font-family: Arial; font-weight: bold;">  </span><a
+                href="http://localhost:4200/login"
+                style="font-size: 18px; font-family: Arial; font-weight: bold;">http://localhost:4200/</a></span><span
+            style="font-size: 18px; font-family: Arial;">, a login page must be displayed, that’s the one we will
+            be modifying from now</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 3:</span><span
+            style="font-size: 18px; font-family: Arial;"> move to the folder with the code base and install the
+            dependencies of </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Firebase</span><span
+            style="font-size: 18px; font-family: Arial;"> and</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;"> Angular Fire</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">npm
+            install </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">--save
+            firebase @angular/fire</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 4:</span><span
+            style="font-size: 18px; font-family: Arial;"> </span><span style="font-size: 18px; font-family: Arial;">Next
+            go to your Firebase </span><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Project
+            Overview,</span><span style="font-size: 18px; font-family: Arial;"> then click on web and copy the
+        </span><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Config</span><span
+            style="font-size: 18px; font-family: Arial;"> entry</span></div>
+    <div><b style="font-size: 18px;"><br /></b></div>
+    <div style="text-align: center; "><span style="font-size: 18px;"><b><img
+                    src="session1/Screen%20Shot%202020-02-17%20at%2007.54.33.png" height="941"
+                    width="1663" /><br /></b></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">Next, open both, the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">environments/environment.ts </span><span
+            style="font-size: 18px; font-family: Arial;">and</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;" /><span
+            style="font-size: 18px; font-family: Arial;" /><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">environments/environment.prod.ts</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;"> </span><span
+            style="font-size: 18px; font-family: Arial;">files in your </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Angular 8</span><span
+            style="font-size: 18px; font-family: Arial;"> project and add the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">firebaseConfig</span><span
+            style="font-size: 18px; font-family: Arial;"> entry object inside the environment object.</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div>
+            <font style="font-size: 18px;">export const environment = {</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">  ...</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">  <b>firebaseConfig : {</b></font>
+        </div>
+        <div><span style="font-size: 18px;">    apiKey: 'YOUR_API_KEY',</span></div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    authDomain: 'YOUR_AUTH_DOMAIN',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    databaseURL: 'YOUR_DATABASE_URL',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    projectId: 'YOUR_PROJECT_ID',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    storageBucket: 'YOUR_STORAGE_BUCKET',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;"><b>  }</b></font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">};</font>
+        </div>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 5:</span><span
+            style="font-size: 18px; font-family: Arial;"> Move to src/features and add a new folder named “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">firebase</span><span
+            style="font-size: 18px; font-family: Arial;">”, inside of the folder, a file named “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">firebase.module.ts</span><span
+            style="font-size: 18px; font-family: Arial;">”, and add the following content</span></div>
+    <div><br /></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { NgModule } from '@angular/core';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { AngularFireModule } from '@angular/fire';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { AngularFireAuthModule } from '@angular/fire/auth';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { AngularFireAuthGuard } from '@angular/fire/auth-guard';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { AngularFireDatabaseModule, AngularFireDatabase } from
+                    '@angular/fire/database';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import {</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    AngularFirestore,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    AngularFirestoreDocument,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    AngularFirestoreModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    DocumentChangeAction,</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">} from '@angular/fire/firestore';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { environment } from '@enviroments/environment';</font>
+            </div>
+            <div><br /></div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export { AngularFirestore };</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export { AngularFireDatabase };</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export { DocumentChangeAction };</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export { AngularFirestoreDocument };</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">const modules = [AngularFirestoreModule, AngularFireDatabaseModule,
+                    AngularFireAuthModule];</font>
+            </div>
+            <div><br /></div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">@NgModule({</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    imports: [...modules,
+                    AngularFireModule.initializeApp(environment.firebaseConfig)],</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    exports: [...modules, AngularFireModule],</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    providers: [AngularFireAuthGuard],</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">})</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export class FirebaseModule {}</font>
+            </div>
+            <div><br /></div>
+        </div>
+    </div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 6:</span><span
+            style="font-size: 18px; font-family: Arial;"> Now that we have the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Firebase Module</span><span
+            style="font-size: 18px; font-family: Arial;"> created, we must import it into the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">app.module.ts</span><span
+            style="font-size: 18px; font-family: Arial;"> file</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div><span style="font-size: 18px;">...</span></div>
+        <div><b>
+                <font style="font-size: 18px;">...</font>
+            </b></div>
+        <div><b>
+                <font style="font-size: 18px;">import { FirebaseModule } from '@app/features/firebase/firebase.module';
+                </font>
+            </b></div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">@NgModule({</font>
+            </div>
+            <div>
+                <div>
+                    <font style="font-size: 18px;">...</font>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <font style="font-size: 18px;">imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule,
+                        LayoutModule, <b>FirebaseModule</b>],</font>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <font style="font-size: 18px;">...</font>
+                </div>
+                <div>
+                    <font style="font-size: 18px;"><br /></font>
+                </div>
+            </div>
+            <div>
+                <font style="font-size: 18px;">})</font>
+            </div>
+            <div>
+                <div>
+                    <font style="font-size: 18px;">export class AppModule {}</font>
+                </div>
+            </div>
+            <div><br /></div>
+        </div>
+    </div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 7:</span><span
+            style="font-size: 18px; font-family: Arial;"> Now we proceed to override the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">app-routing.module.ts</span><span
+            style="font-size: 18px; font-family: Arial;"> with the following content</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div><br /></div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { NgModule } from '@angular/core';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { redirectUnauthorizedTo } from '@angular/fire/auth-guard';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { Routes, RouterModule, PreloadAllModules } from
+                    '@angular/router';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { canActivate, redirectLoggedInTo } from
+                    '@angular/fire/auth-guard';</font>
+            </div>
+            <div><br /></div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">const redirectLoggedInToItems = redirectLoggedInTo(['user']);</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">const redirectUnauthorizedToLogin = redirectUnauthorizedTo(['login']);
+                </font>
+            </div>
+            <div><br /></div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">const routes: Routes = [</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    { path: '', redirectTo: 'login', pathMatch: 'full' },</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    { path: 'login', loadChildren:
+                    '@app/features/login/login.module#LoginModule', ...canActivate(redirectLoggedInToItems), },</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    { </font><span style="font-size: 18px;">path: 'user', loadChildren: ()
+                =&gt; import('@app/features/admin-user/admin-user.module')</span>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        .then(mod =&gt; mod.AdminUserModule),
+                    ...canActivate(redirectUnauthorizedToLogin),</font>
+            </div>
+            <div><span style="font-size: 18px;">    },</span></div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">];</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">@NgModule({</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    imports: [</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        RouterModule.forRoot(routes, {</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            preloadingStrategy: PreloadAllModules,</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        }),</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    ],</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    exports: [RouterModule],</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">})</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export class AppRoutingModule {}</font>
+            </div>
+        </div>
+        <div>
+            <div><br /></div>
+        </div>
+    </div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 8:</span><span
+            style="font-size: 18px; font-family: Arial;"> Now that we have the </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Firebase Module</span><span
+            style="font-size: 18px; font-family: Arial;"> created, we must import it also into the <span
+                style="font-size: 18px; font-family: Arial; font-weight: bold;">login</span></span><span
+            style="font-size: 18px;"><span
+                style="font-size: 18px; font-family: Arial; font-weight: bold;">.module.ts</span></span><span
+            style="font-size: 18px; font-family: Arial;"> file</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div><span style="font-size: 18px;">...</span></div>
+        <div><span style="font-size: 18px;">...</span></div>
+        <div><span style="font-size: 18px;"><br /></span></div>
+        <div>
+            <font style="font-size: 18px;"><b>import { FirebaseModule } from
+                    '@app/features/firebase/firebase.module';</b></font>
+        </div>
+        <div>
+            <font style="font-size: 18px;"><br /></font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">const modules = [</font>
+            </div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">CommonModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">LoginRoutingModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">RouterModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">HttpClientModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">MaterialModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">ReactiveFormsModule,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;"><b>FirebaseModule</b>,</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">];</font>
+        </div>
+        <div><br /></div>
+        <div><span style="font-size: 18px; color: rgb(51, 51, 51); font-family: Monaco;">...</span></div>
+        <div><span style="font-size: 18px;">...</span></div>
+        <div><span style="font-size: 18px;">export class </span>
+            <font style="font-size: 18px;">LoginModule</font><span style="font-size: 18px;"> {}</span>
+        </div>
+        <div><br /></div>
+        <div><br /></div>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 9:</span><span
+            style="font-size: 18px; font-family: Arial;"> Last but no less, we must override the</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;"> login.service.ts </span><span
+            style="font-size: 18px; font-family: Arial;">fo using </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Firebase</span><span
+            style="font-size: 18px; font-family: Arial;"> functions</span></div>
+    <div><br /></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { Observable } from 'rxjs';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { map } from 'rxjs/operators';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { Router } from '@angular/router';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { Injectable } from '@angular/core';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { AngularFireAuth } from '@angular/fire/auth';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { User } from './models/user';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">import { Authenticate } from './models/authenticate';</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">@Injectable({</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    providedIn: 'root',</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">})</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">export class LoginService {</font>
+            </div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    public user: User;</font>
+            </div>
+            <div><br /></div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    public get isAuthenticated$(): Observable&lt;boolean&gt; {</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        return this.afAuth.authState.pipe(map(user =&gt; user !== null));
+                </font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    }</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    public get currentUser$(): Observable&lt;User | undefined&gt; {
+                </font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        return this.afAuth.authState.pipe(map(user =&gt; user));</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    }</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    constructor(private afAuth: AngularFireAuth, public router: Router) {
+                </font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        this.afAuth.authState.subscribe(user =&gt; {</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            user !== null ? (this.user = user) :
+                    this.router.navigate([`user`]);</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        });</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    }</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    public async logIn(authenticate: Authenticate): Promise&lt;void&gt; {
+                </font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        await this.afAuth.auth</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        .signInWithEmailAndPassword(authenticate.email,
+                    authenticate.password)</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        .then(_ =&gt; this.router.navigate([`user`]))</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        .catch(_ =&gt; console.log('error while looging user in'));
+                </font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    }</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    public async logOut(): Promise&lt;void&gt; {</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        await this.afAuth.auth</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        .signOut()</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        .then(_ =&gt; console.log('user successfully loged out'))</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">        .catch(_ =&gt; console.log('error while looging user out'));
+                </font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        this.router.navigate([`login`]);</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">    }</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">}</font>
+        </div>
+        <div>
+            <div><br /></div>
+        </div>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 10:</span><span
+            style="font-size: 18px; font-family: Arial;"> For testing the changes out, run the app and try to log into
+            the site executing</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">npm
+            start</span></div>
+    <div><br /></div>
+    <div><br /></div>
+</body>
+
+</html>
