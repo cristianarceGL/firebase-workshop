@@ -1,0 +1,44 @@
+{
+  "user": {
+    "YmiEtwanKzfGImufwGLw": {
+      "address": "San José",
+      "cellphone": 50688881111,
+      "displayName": "Angular User",
+      "email": "angular@angular.com",
+      "phoneNumber": 50688881111,
+      "photoURL": "",
+      "uid": "fb-uid-Ng",
+      "id": "YmiEtwanKzfGImufwGLw"
+    },
+    "hWK2l08gjkyqhyH37zsmrw": {
+      "address": "Alajuela",
+      "cellphone": 50688882222,
+      "displayName": "React User",
+      "email": "react@react.com",
+      "phoneNumber": 50688882222,
+      "photoURL": "",
+      "uid": "fb-uid-React",
+      "id": "hWK2l08gjkyqhyH37zsmrw"
+    },
+    "6Z1hUjQDKkKvdhZhts0": {
+      "address": "Cartago",
+      "cellphone": 50688883333,
+      "displayName": "JQuery User",
+      "email": "jquery@jquery.com",
+      "phoneNumber": 50688883333,
+      "photoURL": "",
+      "uid": "fb-uid-Jquery",
+      "id": "6Z1hUjQDKkKvdhZhts0"
+    },
+    "UtrLZibdgUK5RV": {
+      "address": "Heredia",
+      "cellphone": 50688884444,
+      "displayName": "VueJs User",
+      "email": "vue@vue.com",
+      "phoneNumber": 50688884444,
+      "photoURL": "",
+      "uid": "fb-uid-Vue",
+      "id": "UtrLZibdgUK5RV"
+    }
+  }
+}
