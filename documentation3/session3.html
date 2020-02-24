@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="exporter-version" content="Evernote Mac 7.14 (458244)" />
+    <meta name="altitude" content="981.0989990234375" />
+    <meta name="author" content="crisarji@gmail.com" />
+    <meta name="created" content="2020-02-26 23:05:13 +0000" />
+    <meta name="latitude" content="10.0125732421875" />
+    <meta name="longitude" content="-84.18860292901361" />
+    <meta name="source" content="desktop.mac" />
+    <meta name="updated" content="2020-03-31 20:56:36 +0000" />
+    <title>Firebase Workshop Session#3 March-2020</title>
+</head>
+
+<body>
+    <div><span
+            style="font-size: 18px; color: rgb(169, 169, 169); font-family: Arial; font-style: italic;-en-paragraph:true;"
+            title="Page 1">Firebase workshop by Cristian Arce &amp; Alfredo Bonilla
+        </span></div>
+    <hr />
+    <div><span style="font-size: 36px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Session
+            #3</span></div>
+    <div><br /></div>
+    <div><span
+            style="font-size: 24px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Angular Project</span>
+    </div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-family: Arial; font-size: 18px;">Clone the base project  for </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Session#3</span><span
+            style="font-family: Arial; font-size: 18px;"> from this repo into a local folder</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">git
+            clone <a href="mailto:git@github.com">git@github.com</a>:cristianarceGL/firebase-workshop.git</span></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+        </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-stretch: normal; font-variant-caps: normal; line-height: 20px; font-family: &quot;Roboto Mono&quot;;">cd
+            firebase-workshop</span></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+        </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-stretch: normal; font-variant-caps: normal; line-height: 20px; font-family: &quot;Roboto Mono&quot;;">git
+            checkout Session3-Base</span></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span style="background-color:rgb(241, 243, 244);"><span
+                style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+                style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">git
+                pull</span></span><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px;"><span style="font-size: 18px; font-family: Arial;">After pulling the repo, it is
+                mandatory to install all dependencies and run the app</span></span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+        </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">npm
+            install &amp;&amp; npm start</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">After running this, open the browser using the
+            url</span><span style="font-size: 18px; font-family: Arial; font-weight: bold;">  </span><a
+            href="http://localhost:4200/login"
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">http://localhost:4200/</a><span
+            style="font-size: 18px; font-family: Arial;">, a login page must be displayed</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span
+            style="caret-color: rgb(72, 177, 65); font-size: 24px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Firebase
+            Functions</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 1:</span><span
+            style="font-size: 18px; font-family: Arial;"> Move to </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">functions</span><span
+            style="font-size: 18px; font-family: Arial;"> folder and execute</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+        </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">npm
+            install</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 2:</span><span
+            style="font-size: 18px; font-family: Arial;"> It is required to have the latest version of Firebase tools,
+            for install it globally execute</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+        </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">npm
+            install </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">-g
+            firebase-tools</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 3:</span><span
+            style="font-size: 18px; font-family: Arial;"> It is also required to log into your Firebase profile; for
+            doing this and create a </span><span style="font-size: 18px; font-family: Arial;">reference in the current
+            project, we execute</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">firebase
+            login</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">After executing this command, a </span><span
+            style="font-size: 18px; font-family: Arial;">prompt window will be displayed for choosing a valid<span
+                style="font-family: Arial; font-size: 18px; font-weight: bold;"> Google Account</span></span></div>
+    <div><br /></div>
+    <div style="text-align: center; "> </div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2007.19.55.png" height="576"
+            width="889" /><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-family: Arial; font-size: 18px;">The </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Firebase CLI</span><span
+            style="font-family: Arial; font-size: 18px;"> will show the tools and features it will need to access in the
+            profile</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><br /></div>
+    <div style="text-align: center; "><span style="font-size: 18px; font-family: Arial;"><img
+                src="session3/Screen%20Shot%202020-02-28%20at%2007.20.07.png" height="922" width="592" /><br /></span>
+    </div>
+    <div style="text-align: left;"><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: left;"><span style="font-size: 18px; font-family: Arial;">After allowing the access a
+            successful message is displayed</span></div>
+    <div style="text-align: left;"><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center;"><img src="session3/Screen%20Shot%202020-02-28%20at%2007.20.19.png" height="445"
+            width="928" /><br /></div>
+    <div style="text-align: center;"><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: left;"><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: left;"><span style="font-size: 18px; font-family: Arial;">A summary of the process result
+            can be found in terminal</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-26%20at%2017.08.27.png" height="317"
+            width="1215" /><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 4:</span><span
+            style="font-size: 18px; font-family: Arial;"> </span><span style="font-family: Arial; font-size: 18px;">Now,
+            we need to initialize </span><span style="font-family: Arial; font-size: 18px; font-weight: bold;">Firebase
+            Cloud Functions</span><span style="font-family: Arial; font-size: 18px;">, for that, in the terminal (while
+            being in the new </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">functions</span><span
+            style="font-family: Arial; font-size: 18px;"> folder) type</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$ </span><span
+            style="font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;;">firebase init
+            functions</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Note</span><span
+            style="font-size: 18px; font-family: Arial;">: Select in the 1st question = “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Typescript</span><span
+            style="font-size: 18px; font-family: Arial;">”, in other questions select “</span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">No</span><span
+            style="font-size: 18px; font-family: Arial;">”</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-26%20at%2017.10.31.png" height="894"
+            width="760" /><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 5:</span><span
+            style="font-size: 18px; font-family: Arial;"> </span><span style="font-size: 18px; font-family: Arial;"> In
+            functions/src/index.ts, the content is override using this code below</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);-en-codeblock:true;">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">import * as admin from 'firebase-admin';</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">import * as functions from 'firebase-functions';</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">import { UserRecord } from
+                            'firebase-functions/lib/providers/auth';</font>
+                    </div>
+                    <div><br /></div>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">admin.initializeApp(functions.config().firebase);</font>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;"><br /></font>
+                    </div>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">// tslint:disable-next-line: no-implicit-dependencies</font>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">const cors = require('cors')({ origin: true });</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">const moment = require('moment');</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">const firestoreInstance = admin.firestore();</font>
+                    </div>
+                    <div><br /></div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">exports.getDate = functions.https.onRequest((req, res) =&gt; {
+                        </font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">    if (req.method !== 'GET') {</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">        return res.status(403).send('Forbidden!');</font>
+                    </div>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">    }</font>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">    return cors(req, res, () =&gt; {</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">        let format = req.query.format;</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">        if (!format) {</font>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">            format = req.body.format;</font>
+                    </div>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">        }</font>
+                </div>
+                <div>
+                    <div>
+                        <font style="font-size: 18px;">        const formattedDate = moment().format(format);</font>
+                    </div>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">        res.status(200).send(formattedDate);</font>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">    });</font>
+                </div>
+                <div>
+                    <font style="font-size: 18px;">});</font>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div><br /></div>
+                </div>
+            </div>
+            <div>
+                <font style="font-size: 18px;">exports.createUser = functions.auth.user().onCreate((user: UserRecord,
+                    context) =&gt; {</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    return firestoreInstance</font>
+            </div>
+            <div>
+                <font style="font-size: 18px;">        </font><span style="font-size: 18px;">.collection('user')</span>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        .doc(`${user.uid}`)</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        .set({</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            id: user.uid,</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            uid: user.uid,</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            email: user.email,</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            address: '**NotDefined**',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            cellphone: '**NotDefined**',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            displayName: '**NotDefined**',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            phoneNumber: '**NotDefined**',</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">            photoURL: '**NotDefined**',</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        });</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">});</font>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;"><br /></font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">exports.deleteUser = functions.auth.user().onDelete((user: UserRecord)
+                    =&gt; {</font>
+            </div>
+        </div>
+        <div>
+            <div>
+                <font style="font-size: 18px;">    return firestoreInstance</font>
+            </div>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        .collection('user')</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        .doc(`${user.uid}`)</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">        .delete();</font>
+        </div>
+        <div>
+            <font style="font-size: 18px;">});</font>
+        </div>
+    </div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 6:</span><span
+            style="font-size: 18px; font-family: Arial;"> It is time to deploy the functions in Firebase, for doing that
+            execute the following command</span></div>
+    <div><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            npm run deploy</span></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial;">This is the result in terminal</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center;"><img src="session3/Screen%20Shot%202020-02-27%20at%2014.20.59.png" height="570"
+            width="919" /><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 7:</span><span
+            style="font-family: Arial; font-size: 18px;"> After deploying, in the web profile, navigate to </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Functions/Dashboard</span><span
+            style="font-family: Arial; font-size: 18px;">, there t can be found all the deployed functions for the
+            project</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2007.34.10.png" height="513"
+            width="1670" /><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 8:</span><span
+            style="font-size: 18px; font-family: Arial;"> Also in </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">Functions/Logs</span><span
+            style="font-size: 18px; font-family: Arial;">, it is possible to track the steps followed in the execution
+            plan of every single function</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2007.34.24.png" height="870"
+            width="1732" /><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial;">For more information about functions, samples and auth
+            events</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <ul>
+        <li>
+            <div><a style="font-family: Arial; font-size: 18px;"
+                    href="https://firebase.google.com/docs/functions/use-cases?hl=lt">https://firebase.google.com/docs/functions/use-cases</a>
+            </div>
+        </li>
+        <li>
+            <div><a style="font-family: Arial; font-size: 18px;"
+                    href="https://github.com/firebase/functions-samples">https://github.com/firebase/functions-samples</a>
+            </div>
+        </li>
+        <li>
+            <div><a href="https://firebase.google.com/docs/functions/auth-events"
+                    style="font-size: 18px;">https://firebase.google.com/docs/functions/auth-events</a></div>
+        </li>
+    </ul>
+    <div><br /></div>
+    <div><span style="caret-color: rgb(72, 177, 65); font-size: 24px;"><br /></span></div>
+    <div><span
+            style="caret-color: rgb(72, 177, 65); font-size: 24px; color: rgb(72, 177, 65); font-family: Arial; font-weight: bold;">Firebase
+            Hosting</span></div>
+    <div><br /></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 1:</span><span
+            style="font-family: Arial; font-size: 18px;"> Navigate to </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Firebase/Hosting</span><span
+            style="font-family: Arial; font-size: 18px;"> option, and start the set up using the default values</span>
+    </div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2007.24.44.png" height="940"
+            width="1532" /><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-family: Arial; font-size: 18px;">When the setup is done, the </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Hosting</span><span
+            style="font-family: Arial; font-size: 18px;"> is ready to get deploys</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2007.24.56.png" height="940"
+            width="1681" /><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 2:</span><span
+            style="font-size: 18px; font-family: Arial;"> Move to </span><span
+            style="font-size: 18px; font-family: Arial; font-weight: bold;">root</span><span
+            style="font-size: 18px; font-family: Arial;"> folder and execute</span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <font style="font-size: 18px;"><span
+                style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-style: normal; font-variant-caps: normal; font-weight: 400; line-height: 20px; font-size: 18px;">$
+                firebase deploy --only hosting:</span><span
+                style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; -webkit-font-smoothing: auto; color: rgb(236, 64, 122); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-style: normal; font-variant-caps: normal; font-weight: bold; line-height: 20px; font-size: 18px;">target-name</span>
+        </font>
+    </div>
+    <div><br /></div>
+    <div><span style="font-family: Arial; font-size: 18px; font-weight: bold;">Note</span><span
+            style="font-family: Arial; font-size: 18px;">: the </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; -webkit-font-smoothing: auto; font-family: Arial; font-size: 18px; color: rgb(236, 64, 122); font-stretch: normal; font-variant-caps: normal; font-weight: bold; line-height: 20px;">target-name</span><span
+            style="font-family: Arial; font-size: 18px;"> is the unique alphanumeric identifier of the project, it can
+            be found in </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Firebase/Hosting/Dashboard</span><span
+            style="font-family: Arial; font-size: 18px;"> next to </span><span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; -webkit-font-smoothing: auto; font-family: Arial; font-size: 18px; color: rgb(236, 64, 122); font-stretch: normal; font-variant-caps: normal; font-weight: bold; line-height: 20px;">domain</span>
+    </div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2005.51.49.png" height="336"
+            width="778" /><br /></div>
+    <div style="text-align: center; "><br /></div>
+    <div style="text-align: left;"><span style="font-size: 18px; font-family: Arial; font-weight: bold;">PS</span><span
+            style="font-size: 18px; font-family: Arial;">: in case of wanting to avoid possible reference error, there
+            is a npm script for installing dependencies, build the app and deploy to Firebase host</span></div>
+    <div style="text-align: left;"><br /></div>
+    <div
+        style="background-color: rgb(241, 243, 244); padding: 24px 40px; overflow-x: auto; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+        <span
+            style="background-color: rgb(241, 243, 244); overflow-x: auto; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-size: 18px; color: rgb(55, 71, 79); font-family: &quot;Roboto Mono&quot;, monospace; font-stretch: normal; font-variant-caps: normal; line-height: 20px;">$
+            npm run deploy</span></div>
+    <div style="text-align: left;">
+        <div><br /></div>
+        <div><br /></div>
+    </div>
+    <div><span style="font-size: 18px; font-family: Arial; font-weight: bold;">Step 3:</span><span
+            style="font-size: 18px; font-family: Arial;"> After a succeeded deploy, i</span><span
+            style="font-size: 18px; font-family: Arial;">n </span><span
+            style="font-family: Arial; font-size: 18px; font-weight: bold;">Firebase/Hosting/Dashboard </span><span
+            style="font-family: Arial; font-size: 18px;">the hosting already give access to a couple domains for public
+            access, there is even an option for adding a custom domain, for this workshop purposes the default ones are
+            good to</span><span style="font-family: Arial; font-size: 18px; font-weight: bold;" /><span
+            style="font-family: Arial; font-size: 18px;">go</span></div>
+    <div><br /></div>
+    <div style="text-align: center; "><img src="session3/Screen%20Shot%202020-02-28%20at%2007.22.55.png" height="933"
+            width="1737" /><br /></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><span style="font-size: 18px;"><br /></span></div>
+    <div><br /></div>
+</body>
+
+</html>
